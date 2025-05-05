@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knit With Love - Handmade Bags & Accessories</title>
+  <style>
+    :root {
+      --primary: #a0522d;
+      --secondary: #fff3e9;
+      --accent: #e27d60;
+      --light: #fefaf6;
+      --dark: #3a3238;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+
+    .logo h1 {
+      font-size: 26px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-links li {
+      margin-left: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background-color: var(--secondary);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      color: var(--dark);
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: var(--accent);
+    }
+
+    .about {
+      padding: 60px 0;
+    }
+
+    .about-content {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 40px;
+      color: var(--primary);
+    }
+
+    .portfolio {
+      padding: 60px 0;
+      background-color: white;
+    }
+
+    .portfolio-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .gallery-item {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .item-info {
+      padding: 15px;
+      background-color: white;
+    }
+
+    .item-info h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: var(--primary);
+    }
+
+    .item-info p {
+      font-size: 14px;
+      color: var(--dark);
+    }
+
+    .contact {
+      padding: 60px 0;
+      background-color: var(--secondary);
+    }
+
+    .contact-content {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contact-content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .footer-text {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="zwinalogo.jpg" alt="Knit With Love Logo">
+          <h1>ZwinaKnitting</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <h2>Handcrafted with Love</h2>
+      <p>Unique, handmade knitted bags and accessories made in Italy with passion and care.</p>
+      <a href="#contact" class="btn">Request a Custom Order</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-text">
+        <h2>About My Craft</h2>
+        <p>Ciao! I'm a passionate artisan from Italy who fell in love with the art of knitting. Each of my creations is meticulously handcrafted with premium materials and infused with a touch of Italian elegance.</p>
+        <p>What started as a hobby has blossomed into a creative journey where I design and create unique bags and accessories that combine functionality with artistic expression. Every piece carries the "handmade with love" tag - my promise of quality and passion.</p>
+        <p>I specialize in creating custom pieces tailored to your preferences, whether it's a specific color, size, pattern, or design element. No two creations are exactly alike, making each one a special treasure to cherish.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">My Collection</h2>
+      <div class="portfolio-gallery">
+        <div class="gallery-item">
+          <img src="img2.jpg" alt="Tic-tac-toe design bag with hearts">
+          <div class="item-info">
+            <h3>Hearts & Crosses Tote</h3>
+            <p>A playful design featuring red hearts and black crosses on a white crochet base with bamboo handles.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img1.jpg" alt="Blue ribbon bag">
+          <div class="item-info">
+            <h3>Azure Elegance</h3>
+            <p>Soft blue knitted handbag with navy ribbon details and decorative bows.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img5.jpg" alt="Light blue bag with flower">
+          <div class="item-info">
+            <h3>Plumeria Hobo Bag</h3>
+            <p>Light blue knitted bag adorned with a statement plumeria flower charm.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img4.jpg" alt="Navy blue bag with charms">
+          <div class="item-info">
+            <h3>Midnight Charm</h3>
+            <p>Navy blue textured bag with decorative charms including a butterfly and heart pendant.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img3.jpg" alt="Brown bag with butterfly">
+          <div class="item-info">
+            <h3>Cocoa Butterfly</h3>
+            <p>Rich brown knitted bag featuring an iridescent butterfly charm and floral accent.</p>
+          </div>      
+        </div>
+          <div class="gallery-item">
+            <img src="img11.jpg" alt="aqua blue bandana">
+            <div class="item-info">
+              <h3>Aquatic Headband</h3>
+              <p>light aqua blue hand knitted Headband custom made for a client.</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Request a Custom Order</h2>
+      <div class="contact-content">
+        <p><strong>English:</strong> For any questions, custom orders, or collaborations, feel free to contact me on <a href="https://www.instagram.com/zwinaKnitting" target="_blank">Instagram @zwinaKnitting</a> or via email at <a href="mailto:ZwinaKnitting95@gmail.com">ZwinaKnitting95@gmail.com</a>. I’d love to hear from you!</p>
+        <p><strong>Italiano:</strong> Per qualsiasi domanda, ordine personalizzato o collaborazione, non esitare a contattarmi su <a href="https://www.instagram.com/zwinaKnitting" target="_blank">Instagram @zwinaKnitting</a> o via email all’indirizzo <a href="mailto:ZwinaKnitting95@gmail.com">ZwinaKnitting95@gmail.com</a>. Sarà un piacere sentirti!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="footer-text">© 2025 Zwina. All rights reserved. Handmade in Italy with passion.</p>
+    </div>
+  </footer>
+</body>
+</html>
